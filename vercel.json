@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/app.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "frontend/biblioteca-utn/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/app.py"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "frontend/biblioteca-utn/assets/$1"
+    },
+    {
+      "src": "/(.*\\.(?:ico|png|jpg|jpeg|svg|css|js|json|woff2?))",
+      "dest": "frontend/biblioteca-utn/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/biblioteca-utn/index.html"
+    }
+  ]
+}

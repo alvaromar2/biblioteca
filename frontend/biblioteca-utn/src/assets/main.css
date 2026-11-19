@@ -1,0 +1,32 @@
+:root {
+  --utn-blue: #003366;
+  --utn-blue-light: #1765a5;
+  --utn-bg: #f4f7fa;
+  --utn-card-bg: #ffffff;
+  --utn-text: #26354a;
+  --utn-text-muted: #68788d;
+  --utn-border: #dce4ee;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --shadow-sm: 0 2px 8px rgba(16, 45, 80, 0.05);
+  --shadow-hover: 0 6px 16px rgba(16, 45, 80, 0.10);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--utn-bg);
+  color: var(--utn-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Transiciones suaves globales */
+a, button, input, select, textarea {
+  transition: all 0.2s ease-in-out;
+}

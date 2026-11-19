@@ -1,0 +1,26 @@
+{
+  "name": "biblioteca-utn",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "pinia": "^4.1.0",
+    "vue": "^3.5.44",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@rolldown/binding-win32-x64-msvc": "^1.2.16",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "@vue/test-utils": "^2.6.0",
+    "happy-dom": "^21.0.4",
+    "jsdom": "^27.0.1",
+    "vite": "^8.3.5",
+    "vitest": "^4.1.12"
+  }
+}
