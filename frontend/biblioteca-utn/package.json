@@ -15,7 +15,6 @@
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@rolldown/binding-win32-x64-msvc": "^1.2.16",
     "@vitejs/plugin-vue": "^6.0.10",
     "@vue/test-utils": "^2.6.0",
     "happy-dom": "^21.0.4",
