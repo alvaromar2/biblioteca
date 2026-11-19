@@ -1,7 +1,0 @@
-{
-  "devDependencies": {
-    "@vue/test-utils": "^2.6.0",
-    "jsdom": "^27.0.1",
-    "vitest": "^4.1.12"
-  }
-}
